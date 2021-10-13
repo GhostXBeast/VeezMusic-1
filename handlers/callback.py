@@ -33,7 +33,8 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds")               
+                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("💝 Donate", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -43,7 +44,10 @@ async def cbstart(_, query: CallbackQuery):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
-                                
+                [
+                    InlineKeyboardButton(
+                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
+                    )
                 ],
             ]
         ),
